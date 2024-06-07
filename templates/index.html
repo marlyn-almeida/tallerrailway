@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nintendo Page</title>
+    <!-- Enlace a Google Fonts para la fuente "Press Start 2P" -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Press Start 2P', cursive;
             background-color: #ffffff; /* Fondo blanco */
             color: #2d3748;
             margin: 0;
             padding: 0;
         }
         .header, .footer {
-            background-color: #e53e3e; /* Encabezado y pie de página rojo */
+            background-color: #b30000; /* Encabezado y pie de página rojo intenso */
             color: white;
             text-align: center;
             padding: 10px 0;
+            position: relative; /* Permite posicionar elementos dentro del encabezado */
+        }
+        .header .logo {
+            position: absolute; /* Posiciona el logotipo de Nintendo */
+            left: 20px;
+            top: 10px;
+            font-size: 1.5em;
+            color: white;
         }
         .container {
             max-width: 1200px;
@@ -25,10 +35,12 @@
         }
         h1 {
             text-align: center;
-            color: #e53e3e; /* Título rojo */
+            color: #b30000; /* Título rojo intenso */
         }
         h2 {
-            color: #2b6cb0;
+            text-align: center; /* Centrar el título */
+            color: #b30000; /* Título rojo intenso */
+            font-size: 1.5em; /* Aumentar el tamaño de la fuente */
         }
         p {
             line-height: 1.6;
@@ -81,6 +93,7 @@
 </head>
 <body>
     <div class="header">
+        <div class="logo">Nintendo</div>
         <h1>Nintendo</h1>
     </div>
     <div class="container">
