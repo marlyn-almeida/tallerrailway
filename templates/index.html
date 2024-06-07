@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2e8f0;
+            color: #2d3748;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #edf2f7;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #e53e3e;
+        }
+        h2 {
+            color: #2b6cb0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .catalog {
+            margin-top: 20px;
+        }
+        .game {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #cbd5e0;
+        }
+        .game:nth-child(odd) {
+            background-color: #f7fafc;
+        }
+        .game-title {
+            font-weight: bold;
+        }
+        .game-sales {
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nintendo</h1>
+        <h2>Historia</h2>
+        <p>{{ history }}</p>
+        
+        <div class="catalog">
+            <h2>Los 10 juegos más vendidos de Nintendo</h2>
+            {% for game in games %}
+            <div class="game">
+                <span class="game-title">{{ game.title }}</span>
+                <span class="game-sales">{{ game.sales }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+
