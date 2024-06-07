@@ -1,21 +1,19 @@
----
-title: Flask
-description: Un popular framework minimalista para servidores en Python
-tags:
-  - python
-  - flask
----
+# Página de Nintendo
 
-# Ejemplo de Python Flask
+Esta es una página web que muestra la historia de Nintendo y un catálogo de juegos.
 
-Esta es una aplicación de [Flask](https://flask.palletsprojects.com/en/1.1.x/) que sirve una simple respuesta JSON.
+## Estructura de Directorios
 
-## ✨ Características
+- `app.py`: Código principal de la aplicación Flask.
+- `static/`: Carpeta para las imágenes de los juegos.
+- `templates/`: Archivos HTML para las páginas de la aplicación.
+- `railway.json`: Configuración para desplegar en Railway.
+- `.gitignore`: Archivo de ignorados para Git.
+- `Readme.md`: Documentación del proyecto.
 
-- Python
-- Flask
+## Ejecución
 
-## 💁‍♀️ Cómo usar
+Para ejecutar la aplicación, asegúrate de tener Python y Flask instalados. Luego, ejecuta el siguiente comando:
 
-- Instala los requisitos de Python `pip install -r requirements.txt`
-- Inicia el servidor para desarrollo `python3 main.py`
+```bash
+python app.py
